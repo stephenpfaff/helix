@@ -1,7 +1,12 @@
 footer {
   padding: 2rem;
-  background-color: var(--overlay-background-color);
+  background-color: var(--footer-background-color);
   font-size: var(--body-font-size-s);
+  color: #FFF;
+}
+
+footer a:any-link {
+  color: #FFF;
 }
 
 footer .footer {
@@ -11,4 +16,42 @@ footer .footer {
 
 footer .footer p {
   margin: 0;
+  padding-bottom: 1rem;
 }
+
+footer .footer p:first-child strong {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+/* Footer Bottom Column Layout */
+.footer .columns {
+  max-width: 1264px;
+}
+
+.footer .columns > div {
+  display: grid;
+}
+
+@media (min-width: 600px) {
+  .footer .columns > div {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer .columns > div {
+    grid-template-columns: 85% 15%;
+  }
+}
+
+.footer .columns div > div {
+  flex: none;
+  margin: 0;
+}
+
+.footer .columns div div:last-child {
+  font-size: 1.5rem;
+  text-align: right;
+}
+
