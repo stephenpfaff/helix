@@ -236,3 +236,40 @@ main .section[data-section-status='initialized'] {
 main .section.highlight {
   background-color: var(--highlight-background-color);
 }
+
+/* Protiviti Custom Blocks */
+/* BLOCKQUOTES */
+.section .blockquote {
+  font-size: 1em !important;
+  width:60%;
+  margin:50px auto;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #3B3D3E;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
+
+.section .blockquote::before{
+  content: "\201C";
+  color:#333;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+.section .blockquote::after{
+  content: '';
+}
+
+.section .blockquote div:first-child > div{
+  display:block;
+  font-style: italic;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
